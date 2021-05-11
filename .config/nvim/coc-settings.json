@@ -1,0 +1,6 @@
+{
+  "typescript.referencesCodeLens.enable": true,
+  "typescript.implementationsCodeLens.enable": true,
+  "typescript.showUnused": true,
+  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "typescript", "javascript", "typescriptreact", "json"]
+}
