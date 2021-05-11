@@ -1,9 +1,7 @@
 fish
 nodejs
-yarn
 file
 git
-gh
 grep
 less
 curl
@@ -14,12 +12,10 @@ neovim
 nano
 neofetch
 netcat
-openssh
 postgresql
 python
 python2
 tar
 unzip
 vim
-zlib
 zsh
