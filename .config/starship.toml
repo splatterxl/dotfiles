@@ -1,0 +1,43 @@
+# Prompt #
+format = """
+[┌───────────────────>](bold grey)
+[|](bold grey)$directory$git_branch$git_commit$cmd_duration
+[└─ $character/](bold grey) """
+add_newline = false
+
+[ character ]
+success_symbol = "[λ](bold blue)"
+error_symbol = "[Ξ](bold red)"
+vicmd_symbol = "[ψ](bold green)"
+
+[ git_branch ]
+always_show_remote = true
+format = "[on](bold grey) [$symbol$branch](purple) "
+
+[ git_commit ]
+format = "[@ commit](bold grey) [\\($hash\\)](purple) "
+commit_hash_length = 4
+
+[ git_status ]
+format = '[w/](bold grey) [$all_status$ahead_behind](yellow)'
+conflicted = "!="
+ahead = "-->"
+behind = "<--"
+diverged = "<->"
+untracked = "?"
+modified = "/"
+renamed = "=>"
+
+[ nodejs ]
+format = "[via](bold grey) [$symbol($version)](green) "
+detect_extensions = ["js", "mjs", "cjs"]
+symbol = "node.js ~ "
+
+[ package ]
+format = "[is a](bold grey) [$symbol$version](yellow)"
+symbol = "pkg ~ "
+
+[ cmd_duration ]
+format = "took [$duration]($style) "
+min_time = 2_000
+style = "bold yellow"

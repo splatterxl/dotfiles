@@ -1,1 +1,4 @@
 .config/coc/extensions/node_modules/*/*
+.config/gh/hosts.yml
+.config/fish/conf.d/termux.fish
+.config/yarn/
