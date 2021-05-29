@@ -28,6 +28,7 @@ install_dotfiles() {
   mkdir -p "$HOME/.config"
 
   link_all "$PWD/.config" "$HOME"
+  link_all "$PWD/.zsh" "$HOME"
 }
 
 check_dir() {
@@ -36,7 +37,7 @@ check_dir() {
 
 check_dir .git
 check_dir .config
-
+check_dir .zsh
 if [ "$1" = "install" ]; then
   install_dotfiles
 elif [ "$1" = "override" ]; then
