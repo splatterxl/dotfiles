@@ -11,21 +11,18 @@ error_symbol = "[Ξ](bold red)"
 vicmd_symbol = "[ψ](bold green)"
 
 [ git_branch ]
-always_show_remote = true
 format = "[on](bold grey) [$symbol$branch](purple) "
 
 [ git_commit ]
 format = "[@ commit](bold grey) [\\($hash\\)](purple) "
 commit_hash_length = 4
 
-
 [ nodejs ]
 format = "[via](bold grey) [$symbol($version)](green) "
 detect_extensions = ["js", "mjs", "cjs"]
-symbol = "node.js ~ "
-
+symbol = "node.js ~"
 
 [ cmd_duration ]
 format = "took [$duration]($style) "
-min_time = 2_000
+min_time = 1_000
 style = "bold yellow"

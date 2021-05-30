@@ -1,7 +1,7 @@
 tsserver.organizeImports
+prettier.formatFile
 document.renameCurrentWord
 document.echoFiletype
-prettier.formatFile
 tsserver.renameSymbol
 tsserver.renameSymbil
 tsserver.restartTsserver

@@ -8,26 +8,32 @@ die() {
 
 link_all() {
   for file in "$1/"*; do
-    filename="${file#*$PWD}"
-    outfile=$(echo "${HOME:?WHY IS THE HOME VARIABLE NOT SET WHAT THE FUCK}/$filename" | tr -s /)
-    [ "${outfile%/}" = "$HOME" ] && die "Something went wrong and $file was translated to $HOME"
-    if [ -e "$outfile" ]; then
-      if [ -n "$_override" ]; then
-        echo "$outfile exists. Deleting since override command was used"
-        rm -rf "$outfile"
-      else 
-        echo "$outfile exists. Run $0 override to override"
-        continue
-      fi
-    fi
-    ln -s "$file" "$outfile"
+    link "$file"
   done
+}
+link() {
+  file="$1"
+  filename="${file#*$PWD}"
+  outfile=$(echo "${HOME:?WHY IS THE HOME VARIABLE NOT SET WHAT THE FUCK}/$filename" | tr -s /)
+  [ "${outfile%/}" = "$HOME" ] && die "Something went wrong and $file was translated to $HOME"
+  if [ -e "$outfile" ]; then
+    if [ -n "$_override" ]; then
+      echo "$outfile exists. Deleting since override command was used"
+      rm -rf "$outfile"
+    else 
+      echo "$outfile exists. Run $0 override to override"
+      continue
+    fi
+  fi
+  ln -s "$file" "$outfile"
 }
 
 install_dotfiles() {
   mkdir -p "$HOME/.config"
 
   link_all "$PWD/.config" "$HOME"
+  link "$PWD/.zshrc"
+  mkdir -p "$HOME/.zsh"
   link_all "$PWD/.zsh" "$HOME"
 }
 
