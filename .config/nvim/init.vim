@@ -46,6 +46,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'yuezk/vim-js'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'kyazdani42/nvim-web-devicons'
+
 " also you might wanna try
 " Plug 'akinsho/nvim-bufferline.lua'
 

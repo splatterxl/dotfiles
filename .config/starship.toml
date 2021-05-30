@@ -15,7 +15,7 @@ format = "[on](bold grey) [$symbol$branch](purple) "
 
 [ git_commit ]
 format = "[@ commit](bold grey) [\\($hash\\)](purple) "
-commit_hash_length = 4
+commit_hash_length = 6
 
 [ nodejs ]
 format = "[via](bold grey) [$symbol($version)](green) "
