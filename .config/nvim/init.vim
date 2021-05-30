@@ -46,7 +46,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'yuezk/vim-js'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'kyazdani42/nvim-web-devicons'
-
+Plug 'preservim/nerdcommenter'
 " also you might wanna try
 " Plug 'akinsho/nvim-bufferline.lua'
 
@@ -348,3 +348,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 nnoremap <silent><nowait> <C-n> :<C-u>NERDTreeToggle<CR>
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+let mapleader = ","
+filetype plugin on
+nnoremap <silent><nowait> <C-c> ,c 
