@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/data/data/com.termux/files/home/.vim/autoload'
+let g:netrw_dirhist_6='/data/data/com.termux/files/home/.vim'
+let g:netrw_dirhist_5='/data/data/com.termux/files/home/.vim/autoload'
+let g:netrw_dirhist_4='/data/data/com.termux/files/home/.vim'
 let g:netrw_dirhist_3='/data/data/com.termux/files/home/lightbulb/src/modules'
 let g:netrw_dirhist_2='/data/data/com.termux/files/home/lightbulb/src'
 let g:netrw_dirhist_1='/data/data/com.termux/files/home/lightbulb'
