@@ -24,9 +24,9 @@
           "version": "2.7.18-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "56ddddd36335f4695a5b622a311910cbd19269afa8ee45f7c310bcc0f32b4b29761ec08ffcde57ae1bc6ce3050a9c57978faa34239a4fff9fdde5a3f36257588"
+        "fileHash": "5bd0e4e086f45dd98d350588aa8b82f937c391f13fe2d443f592190b424102a04a8a8d6e12519dff41d0bd647f69cfdfa4ece5a7a65cb5811f7070db42d2e6cb"
       },
-      "expiry": 1619637390980
+      "expiry": 1624276978028
     },
     "/data/data/com.termux/files/usr/bin/python2.7.v3": {
       "data": {
@@ -49,9 +49,9 @@
           "version": "2.7.18-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "7900215ad50d623b4c1d21e2afad2fdfdc3301be3364ced0944238e0ea6b6524c1585bc3ea49444923cef5060c38d22e0b51453dd2c42df0f2ed5cefb35a93d4"
+        "fileHash": "78d357e203dd9f6996af266a9114e2366f656117f8720825e53188e14b50127fe2ba0d44df38a8fc422aefaf384546732931ec672845b07d04c4b89244649321"
       },
-      "expiry": 1619637390591
+      "expiry": 1624276978030
     },
     "/data/data/com.termux/files/usr/bin/python.v3": {
       "data": {
@@ -63,20 +63,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.2-final",
+          "raw": "3.9.5-final",
           "major": 3,
           "minor": 9,
-          "patch": 2,
+          "patch": 5,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.2-final"
+          "version": "3.9.5-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40"
+        "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72"
       },
-      "expiry": 1619637391054
+      "expiry": 1624276978026
     },
     "/data/data/com.termux/files/usr/bin/python3.v3": {
       "data": {
@@ -88,20 +88,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.2-final",
+          "raw": "3.9.5-final",
           "major": 3,
           "minor": 9,
-          "patch": 2,
+          "patch": 5,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.2-final"
+          "version": "3.9.5-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "81948984bf88d7bcba090474c38ac8baf4a71d599c247b366a0be29bb6f605651decf6ce5df2fdb6a5921b25f0dbcaa9e78b92e2c5711e1cacff43541f9ea755"
+        "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72"
       },
-      "expiry": 1619637391065
+      "expiry": 1624276978023
     },
     "/data/data/com.termux/files/usr/bin/python3.9.v3": {
       "data": {
@@ -113,20 +113,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.2-final",
+          "raw": "3.9.5-final",
           "major": 3,
           "minor": 9,
-          "patch": 2,
+          "patch": 5,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.2-final"
+          "version": "3.9.5-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "053e5cadc1473d4627215ff79de4fe00672d06dfe470f1138a3b4ed1e845be909f80edb578d2c7651dda4be23e115dec48af2fa2bd23ff528ea9ca85ff1c43b4"
+        "fileHash": "46cffc129a49b53719c13a4bd159fa10d1618f66bcad8d91aa0cefee992396176ec4f55a7a74a89070691a2663f9394ca3f005dd319fb33460e21edba23f4e05"
       },
-      "expiry": 1619637391056
+      "expiry": 1624276978021
     },
     "INTERPRETERS_CACHE_v3_KnownPathsService": [
       {
@@ -138,18 +138,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.2-final",
+          "raw": "3.9.5-final",
           "major": 3,
           "minor": 9,
-          "patch": 2,
+          "patch": 5,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.2-final"
+          "version": "3.9.5-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40",
+        "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72",
         "type": "Unknown"
       },
       {
@@ -172,7 +172,7 @@
           "version": "2.7.18-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "56ddddd36335f4695a5b622a311910cbd19269afa8ee45f7c310bcc0f32b4b29761ec08ffcde57ae1bc6ce3050a9c57978faa34239a4fff9fdde5a3f36257588",
+        "fileHash": "5bd0e4e086f45dd98d350588aa8b82f937c391f13fe2d443f592190b424102a04a8a8d6e12519dff41d0bd647f69cfdfa4ece5a7a65cb5811f7070db42d2e6cb",
         "type": "Unknown"
       },
       {
@@ -195,7 +195,7 @@
           "version": "2.7.18-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "7900215ad50d623b4c1d21e2afad2fdfdc3301be3364ced0944238e0ea6b6524c1585bc3ea49444923cef5060c38d22e0b51453dd2c42df0f2ed5cefb35a93d4",
+        "fileHash": "78d357e203dd9f6996af266a9114e2366f656117f8720825e53188e14b50127fe2ba0d44df38a8fc422aefaf384546732931ec672845b07d04c4b89244649321",
         "type": "Unknown"
       },
       {
@@ -207,18 +207,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.2-final",
+          "raw": "3.9.5-final",
           "major": 3,
           "minor": 9,
-          "patch": 2,
+          "patch": 5,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.2-final"
+          "version": "3.9.5-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "81948984bf88d7bcba090474c38ac8baf4a71d599c247b366a0be29bb6f605651decf6ce5df2fdb6a5921b25f0dbcaa9e78b92e2c5711e1cacff43541f9ea755",
+        "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72",
         "type": "Unknown"
       },
       {
@@ -230,18 +230,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.2-final",
+          "raw": "3.9.5-final",
           "major": 3,
           "minor": 9,
-          "patch": 2,
+          "patch": 5,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.2-final"
+          "version": "3.9.5-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "053e5cadc1473d4627215ff79de4fe00672d06dfe470f1138a3b4ed1e845be909f80edb578d2c7651dda4be23e115dec48af2fa2bd23ff528ea9ca85ff1c43b4",
+        "fileHash": "46cffc129a49b53719c13a4bd159fa10d1618f66bcad8d91aa0cefee992396176ec4f55a7a74a89070691a2663f9394ca3f005dd319fb33460e21edba23f4e05",
         "type": "Unknown"
       }
     ],
@@ -255,18 +255,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.2-final",
+          "raw": "3.9.5-final",
           "major": 3,
           "minor": 9,
-          "patch": 2,
+          "patch": 5,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.2-final"
+          "version": "3.9.5-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "81948984bf88d7bcba090474c38ac8baf4a71d599c247b366a0be29bb6f605651decf6ce5df2fdb6a5921b25f0dbcaa9e78b92e2c5711e1cacff43541f9ea755",
+        "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72",
         "type": "Unknown"
       },
       {
@@ -289,7 +289,7 @@
           "version": "2.7.18-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "56ddddd36335f4695a5b622a311910cbd19269afa8ee45f7c310bcc0f32b4b29761ec08ffcde57ae1bc6ce3050a9c57978faa34239a4fff9fdde5a3f36257588",
+        "fileHash": "5bd0e4e086f45dd98d350588aa8b82f937c391f13fe2d443f592190b424102a04a8a8d6e12519dff41d0bd647f69cfdfa4ece5a7a65cb5811f7070db42d2e6cb",
         "type": "Unknown"
       },
       {
@@ -301,18 +301,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.2-final",
+          "raw": "3.9.5-final",
           "major": 3,
           "minor": 9,
-          "patch": 2,
+          "patch": 5,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.2-final"
+          "version": "3.9.5-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40",
+        "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72",
         "type": "Unknown"
       },
       {
@@ -324,18 +324,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.9.2-final",
+          "raw": "3.9.5-final",
           "major": 3,
           "minor": 9,
-          "patch": 2,
+          "patch": 5,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.9.2-final"
+          "version": "3.9.5-final"
         },
         "sysPrefix": "/data/data/com.termux/files/usr",
-        "fileHash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40",
+        "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72",
         "type": "Unknown"
       }
     ],
@@ -348,20 +348,19 @@
           "includePrerelease": false
         },
         "loose": false,
-        "raw": "3.9.2-final",
+        "raw": "3.9.5-final",
         "major": 3,
         "minor": 9,
-        "patch": 2,
+        "patch": 5,
         "prerelease": [
           "final"
         ],
         "build": [],
-        "version": "3.9.2-final"
+        "version": "3.9.5-final"
       },
       "sysPrefix": "/data/data/com.termux/files/usr",
-      "fileHash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40",
-      "type": "Unknown",
-      "cachedEntry": true
+      "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72",
+      "type": "Unknown"
     },
     "PipEnvInformation": [],
     "preferredGlobalPyInterpreter": {
@@ -389,17 +388,17 @@
     },
     "/data/data/com.termux/files/usr/bin/python.interpreter.displayName.v7": {
       "data": {
-        "displayName": "Python 3.9.2 32-bit",
-        "hash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40-9e15512e021f011587bc53f14dcbf674"
+        "displayName": "Python 3.9.5 32-bit",
+        "hash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72-e04a5e47a61ae53d864d82a0d7333f55"
       },
-      "expiry": 1619637391132
+      "expiry": 1624276978142
     },
     "/data/data/com.termux/files/usr/bin/python2.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.18 32-bit",
-        "hash": "56ddddd36335f4695a5b622a311910cbd19269afa8ee45f7c310bcc0f32b4b29761ec08ffcde57ae1bc6ce3050a9c57978faa34239a4fff9fdde5a3f36257588-7a4b33547c43494cc0bf0cc7cf8e6575"
+        "hash": "5bd0e4e086f45dd98d350588aa8b82f937c391f13fe2d443f592190b424102a04a8a8d6e12519dff41d0bd647f69cfdfa4ece5a7a65cb5811f7070db42d2e6cb-caff161d04400f041cdc74563f52f81c"
       },
-      "expiry": 1617041095325
+      "expiry": 1624276978081
     },
     "InterpreterAutoSeletionRule-system": {
       "architecture": 2,
@@ -410,25 +409,24 @@
           "includePrerelease": false
         },
         "loose": false,
-        "raw": "3.9.2-final",
+        "raw": "3.9.5-final",
         "major": 3,
         "minor": 9,
-        "patch": 2,
+        "patch": 5,
         "prerelease": [
           "final"
         ],
         "build": [],
-        "version": "3.9.2-final"
+        "version": "3.9.5-final"
       },
       "sysPrefix": "/data/data/com.termux/files/usr",
-      "fileHash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40",
+      "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72",
       "type": "Unknown",
-      "cachedEntry": true,
-      "displayName": "Python 3.9.2 32-bit"
+      "displayName": "Python 3.9.5 32-bit"
     },
     "/data/data/com.termux/files/usr/bin/python.interpreter.Details.v7": {
       "data": {
-        "fileHash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40",
+        "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72",
         "info": {
           "architecture": 2,
           "path": "/data/data/com.termux/files/usr/bin/python",
@@ -438,29 +436,28 @@
               "includePrerelease": false
             },
             "loose": false,
-            "raw": "3.9.2-final",
+            "raw": "3.9.5-final",
             "major": 3,
             "minor": 9,
-            "patch": 2,
+            "patch": 5,
             "prerelease": [
               "final"
             ],
             "build": [],
-            "version": "3.9.2-final"
+            "version": "3.9.5-final"
           },
           "sysPrefix": "/data/data/com.termux/files/usr",
-          "fileHash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40",
+          "fileHash": "92d9a48e632bab3b081d2bb320e72165c9ecd48d073b23cb18dfcd0472eaf6a283513baf4a0fa8b4ab4889cdab6474a67cf97fecbab6cf728bab34a7707a0b72",
           "type": "Unknown",
-          "cachedEntry": true,
-          "displayName": "Python 3.9.2 32-bit",
+          "displayName": "Python 3.9.5 32-bit",
           "__store": true
         }
       },
-      "expiry": 1619637391080
+      "expiry": 1624276978126
     },
     "/data/data/com.termux/files/usr/bin/python2.interpreter.Details.v7": {
       "data": {
-        "fileHash": "56ddddd36335f4695a5b622a311910cbd19269afa8ee45f7c310bcc0f32b4b29761ec08ffcde57ae1bc6ce3050a9c57978faa34239a4fff9fdde5a3f36257588",
+        "fileHash": "5bd0e4e086f45dd98d350588aa8b82f937c391f13fe2d443f592190b424102a04a8a8d6e12519dff41d0bd647f69cfdfa4ece5a7a65cb5811f7070db42d2e6cb",
         "info": {
           "architecture": 2,
           "path": "/data/data/com.termux/files/usr/bin/python2",
@@ -481,12 +478,12 @@
             "version": "2.7.18-final"
           },
           "sysPrefix": "/data/data/com.termux/files/usr",
-          "fileHash": "56ddddd36335f4695a5b622a311910cbd19269afa8ee45f7c310bcc0f32b4b29761ec08ffcde57ae1bc6ce3050a9c57978faa34239a4fff9fdde5a3f36257588",
+          "fileHash": "5bd0e4e086f45dd98d350588aa8b82f937c391f13fe2d443f592190b424102a04a8a8d6e12519dff41d0bd647f69cfdfa4ece5a7a65cb5811f7070db42d2e6cb",
           "type": "Unknown",
           "displayName": "Python 2.7.18 32-bit"
         }
       },
-      "expiry": 1617041095376
+      "expiry": 1624276978133
     },
     "ProposeLSBanner": false,
     "InterpreterAutoSeletionRule-cachedInterpreters": {
@@ -581,5 +578,34 @@
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
     "INTERPRETERS_CACHE_v3_PipEnvService:aa75550e7ab2bea275caaf9d27699024": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:aa75550e7ab2bea275caaf9d27699024": []
+  },
+  "coc-python|/data/data/com.termux/files/home/helloworld": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:a5efc05eaadb4931df2b42d3991137bb": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:a5efc05eaadb4931df2b42d3991137bb": [],
+    "autoSelectedWorkspacePythonInterpreter-/data/data/com.termux/files/home/helloworld": {
+      "architecture": 2,
+      "path": "/data/data/com.termux/files/usr/bin/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.9.2-final",
+        "major": 3,
+        "minor": 9,
+        "patch": 2,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.9.2-final"
+      },
+      "sysPrefix": "/data/data/com.termux/files/usr",
+      "fileHash": "4047b19da1cb3919489781163a8ad0b11a634fce4cf031235b18745b92d9463993789bc801cfea1b1ce9014578d7f6449b31a5a9d764e1a0850ee2c29ec24a40",
+      "type": "Unknown"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
   }
 }
