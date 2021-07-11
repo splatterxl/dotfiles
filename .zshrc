@@ -1,4 +1,11 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
+GITSTATUS_LOG_LEVEL=DEBUG
 # You should have received the contents of zsh-hl/ and zsh-as/ directory with this file.
 # These come from https://github.com/zsh-users. Inspired by Leah Neukirchen's dotfiles.
 
@@ -161,15 +168,23 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-if [ -e $HOME/.zsh/.zsh ]; then
-  . ~/.zsh/.zsh
+if [ -e $HOME/.zsh/conf.zsh ]; then
+  . ~/.zsh/conf.zsh
 fi
 export LD_LIBRARY_PATH=$PREFIX/usr/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=$PREFIX/usr/lib/pkgconfig:$PKG_CONFIG_PATH
 
+start_lightbulb() {
+  yarn watch >/dev/null &
+  yarn dev
+}
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
