@@ -1,11 +1,10 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  #source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
-GITSTATUS_LOG_LEVEL=DEBUG
 # You should have received the contents of zsh-hl/ and zsh-as/ directory with this file.
 # These come from https://github.com/zsh-users. Inspired by Leah Neukirchen's dotfiles.
 
@@ -57,7 +56,7 @@ gitpwd() {
             [[ $branch = *\~* ]] || branch+="~0"    # distinguish detached HEAD
         fi
         if (( $#splitprefix > NDIRS )); then
-            print -n "${segs[$#splitprefix]}@$branch "
+            print -n "${segs[$#splitprefix]}@%F{green}$branch%f "
         else
             segs[$#splitprefix]+=@$branch
         fi
@@ -100,11 +99,74 @@ add-zsh-hook precmd _exec_time_precmd_hook
 add-zsh-hook precmd _wndtitle_precmd_hook
 
 _paint_exec_time() {
-    if [[ $_exec_time_duration -ge 2 ]]; then
-        print -n $(displaytime $_exec_time_duration)
-        _exec_time_duration=0
-        _exec_time_start=0
-    fi
+  if [ "$_exec_time_duration" -ge 2 ]; then
+    print -n " in $(displaytime $_exec_time_duration)"
+    _exec_time_duration=0
+    _exec_time_start=0
+  fi
+}
+
+# POSIX signals
+human_posix() {
+  sig="$1"
+  txt="unknown"
+  case "$sig" in
+    1)
+      txt=HUP
+      ;;
+    2)
+      txt=INT
+      ;;
+    3)
+      txt=QUIT
+      ;;
+    4)
+      txt=ILL
+      ;;
+    6)
+      txt=ABRT
+      ;;
+    8)
+      txt=FPE
+      ;;
+    9)
+      txt=KILL
+      ;;
+    11)
+      txt=SEGV
+      ;;
+    13)
+      txt=PIPE
+      ;;
+    14)
+      txt=ALRM
+      ;;
+    15)
+      txt=TERM
+      ;;
+    30|10|16)
+      txt=USR1
+      ;;
+    31|12|17)
+      txt=USR2
+      ;;
+    19|18|25)
+      txt=CONT
+      ;;
+    17|23) # not adding 19 because wtf
+      txt=STOP
+      ;;
+    18|20|24)
+      txt=TSTP
+      ;;
+    21|26)
+      txt=TTIN
+      ;;
+    22|27)
+      txt=TTOU
+      ;;
+  esac
+  printf "%d" $txt
 }
 
 
@@ -152,15 +214,12 @@ yell() {
 mkd() { mkdir -p "$1" && cd "$1" }
 exe() { chmod a+x "$1" }
 alias md='mkdir'
-alias vps=' // -- // '
-alias unixlgbt=' // -- // '
 alias poweroff='/sbin/shutdown -P now'
 alias reboot='/sbin/shutdown -r now'
 alias dpi='xdpyinfo | grep -B 2 resolution'
-alias fontcalc="perl -e '\$_=\`xdpyinfo|grep dots\`;s/.*?([0-9]+)x.*/\$1/;print((72*shift @ARGV)/\$_."\n");'"
 alias tmux='tmux -2'
 # set the shell
-SHELL=/usr/bin/zsh
+SHELL=$PREFIX/bin/zsh
 # ctrl+s => accept autosuggestion
 bindkey "^S" forward-char
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -184,7 +243,7 @@ start_lightbulb() {
   yarn watch >/dev/null &
   yarn dev
 }
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+setopt PROMPT_SUBST
+PROMPT='[%F{214}%T%f] %F{159}$(gitpwd)%f %F{red}%(?..[%?])%f%# '
+RPROMPT='%(?.%F{green}OK%f.%F{red}ERR!%f)%F{104}$(_paint_exec_time)$f'

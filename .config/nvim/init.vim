@@ -24,7 +24,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'andweeb/presence.nvim'
 " Plug 'itchyny/lightline.vim'
 Plug 'dag/vim-fish'
-Plug 'tjdevries/coc-zsh'
 Plug 'udalov/kotlin-vim'
 Plug 'dense-analysis/ale'
 " Plug 'maximbaz/lightline-ale'
