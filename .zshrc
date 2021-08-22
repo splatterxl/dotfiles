@@ -218,6 +218,12 @@ alias poweroff='/sbin/shutdown -P now'
 alias reboot='/sbin/shutdown -r now'
 alias dpi='xdpyinfo | grep -B 2 resolution'
 alias tmux='tmux -2'
+alias vim='nvim'
+alias vi='nvim'
+
+# trollface
+alias code='nvim'
+alias code-insiders='nvim'
 # set the shell
 SHELL=$PREFIX/bin/zsh
 # ctrl+s => accept autosuggestion

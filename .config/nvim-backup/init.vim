@@ -10,7 +10,7 @@ set nocompatible 					" be iMproved, required
 
 " Plugins
 call plug#begin('~/.cache/nvim/plugged') 	"required
-"Plug 'wakatime/vim-wakatime'
+Plug 'wakatime/vim-wakatime'
 " tools
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -224,12 +224,7 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Use <c-space> to trigger completion.
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
+imap <silent><expr> <c-i> coc#refresh()
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin

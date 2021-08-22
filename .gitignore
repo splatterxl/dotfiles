@@ -2,3 +2,4 @@
 .config/gh/hosts.yml
 .config/fish/conf.d/termux.fish
 .config/yarn/
+.config/setuptool
