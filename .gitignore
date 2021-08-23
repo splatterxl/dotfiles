@@ -3,3 +3,4 @@
 .config/fish/conf.d/termux.fish
 .config/yarn/
 .config/setuptool
+.config/setuptool_installed_pkgs

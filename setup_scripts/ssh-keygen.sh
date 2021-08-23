@@ -3,20 +3,24 @@
 
 path=$HOME/.ssh/id_rsa.pub
 
+show_key() {
+  info "Key pair $1generated, you should now upload the following text to GitHub."
+  info
+  info $(cat $path)
+  info
+  info "(You can always access this at ~/.ssh/id_rsa.pub)"
+
+  echo sshkeys:checked >> .config/setuptool
+}
+
 if [ -e "$path" ]; then
   if ! grep -q sshkeys:checked .config/setuptool; then
-    echo [info] RSA public/private key pair already generated, you should now upload \
-      the public key to GitHub:
-    echo
-    cat $path
-
-    echo sshkeys:checked >> .config/setuptool
+    show_key "already "
   else
-    echo [info] Key pair already generated.
+    info "Key pair already generated."
   fi
 else
   ssh-keygen
-  echo [info] key pair generated, you should now upload the new public key to GitHub:
-  cat $path
+  show_key
 fi
 

@@ -10,7 +10,6 @@ make
 neovim
 nano
 neofetch
-postgresql
 python
 python2
 tar

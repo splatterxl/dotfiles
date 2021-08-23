@@ -4,7 +4,7 @@ local M = {}
 
 -- non plugin ui configs, available without any plugins
 M.ui = {
-   italic_comments = false,
+   italic_comments = true,
 
    -- theme to be used, to see all available themes, open the theme switcher by <leader> + th
    theme = "tokyonight",
@@ -20,7 +20,7 @@ M.ui = {
    },
 
    -- Enable this only if your terminal has the colorscheme set which nvchad uses
-   -- For Ex : if you have onedark set in nvchad , set onedark's bg color on your terminal
+   -- For E : if you have onedark set in nvchad, set onedark's bg color on your terminal
    transparency = false,
 }
 
@@ -33,7 +33,7 @@ M.ui.plugin = {
       hidden = {},
       shown = {},
       -- default, round , slant , block , arrow
-      style = "default",
+      style = "arrow",
    },
 }
 
@@ -53,7 +53,7 @@ M.options = {
    permanent_undo = true,
    shiftwidth = 2,
    smartindent = true,
-   tabstop = 8, -- Number of spaces that a <Tab> in the file counts for
+   tabstop = 4, -- Number of spaces that a <Tab> in the file counts for
    timeoutlen = 400,
    relativenumber = false,
    ruler = false,
@@ -86,8 +86,8 @@ M.plugin_status = {
    lspsignature = true, -- lsp enhancements
    neoformat = true, -- universal formatter
    neoscroll = true, -- smooth scroll
-   telescope_media = true, -- see media files in telescope picker
-   truezen = true, -- no distraction mode for nvim
+   telescope_media = false, -- see media files in telescope picker
+   truezen = false, -- no distraction mode for nvim
    vim_fugitive = true, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
 }
@@ -147,7 +147,7 @@ M.mappings.plugin = {
       user_keys = "<leader>uk",
    },
    comment = {
-      toggle = "<leader>/", -- trigger comment on a single/selected lines/number prefix
+      toggle = "<leader>c<space>", -- trigger comment on a single/selected lines/number prefix
    },
    dashboard = {
       bookmarks = "<leader>bm",
@@ -191,5 +191,7 @@ M.mappings.plugin = {
       git_blame = "<leader>gb",
    },
 }
+
+
 
 return M
