@@ -3,15 +3,6 @@ if ! [ -e .config/setuptool ]; then
   touch .config/setuptool
 fi
 
-# whether to use the network
-ping -c1 1.1.1.1 2>/dev/null >/dev/null
-
-export download=$?
-
-if [ "$download" == 0 ]; then
-  export download=""
-fi
-
 if [ "$1" == "nonet" ]; then
   export download=1
 fi
@@ -118,7 +109,7 @@ if [ -z "$download" ]; then
     if grep -q $x .config/setuptool_installed_pkgs; then
       debug "$x is already installed, skipping"
     else
-      $pkg "$x"
+      sudo $pkg "$x"
     fi
   done
   echo_done

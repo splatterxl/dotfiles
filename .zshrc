@@ -324,8 +324,8 @@ alias vim='nvim'
 alias vi='nvim'
 
 # trollface
-alias code='nvim'
-alias code-insiders='nvim'
+# alias code='nvim'
+# alias code-insiders='nvim'
 # set the shell
 SHELL=$PREFIX/bin/zsh
 # ctrl+s => accept autosuggestion
