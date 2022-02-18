@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+eval "$(zoxide init zsh)"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/data/data/com.termux/files/home/.oh-my-zsh"
 
@@ -209,7 +211,7 @@ _paint_exec_time() {
 }
 
 # POSIX signals
-human_posix() {
+human_sig() {
   sig="$1"
   txt="unknown"
   case "$sig" in
@@ -315,6 +317,9 @@ yell() {
 }
 mkd() { mkdir -p "$1" && cd "$1" }
 exe() { chmod a+x "$1" }
+loc() {
+  node $HOME/loc/loc.mjs $@
+}
 alias md='mkdir'
 alias poweroff='/sbin/shutdown -P now'
 alias reboot='/sbin/shutdown -r now'
@@ -322,6 +327,8 @@ alias dpi='xdpyinfo | grep -B 2 resolution'
 alias tmux='tmux -2'
 alias vim='nvim'
 alias vi='nvim'
+alias yw='yarn watch'
+alias yd='yarn dev'
 
 # trollface
 # alias code='nvim'
@@ -330,7 +337,7 @@ alias vi='nvim'
 SHELL=$PREFIX/bin/zsh
 # ctrl+s => accept autosuggestion
 bindkey "^S" forward-char
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)

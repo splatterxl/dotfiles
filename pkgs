@@ -10,10 +10,6 @@ make
 neovim
 nano
 neofetch
-python
-python2
 tar
 unzip
-vim
 zsh
-rust

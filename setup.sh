@@ -7,6 +7,10 @@ if [ "$1" == "nonet" ]; then
   export download=1
 fi
 
+sudo() {
+  $@
+}
+
 br() {
   echo
 }
