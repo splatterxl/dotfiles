@@ -130,8 +130,10 @@ info "copying configuration..."
 
 # copy NvChad configuration to its correct folder 
 chadrc() {
-  cp chadrc.lua chadrc.lua~
-  mv chadrc.lua~ .config/nvim/lua/chadrc.lua
+  cp chadrc-custom custom -r
+  rm -rf .config/nvim/lua/custom
+  mv custom .config/nvim/lua/
+  nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 }
 
 if [ -e .config/nvim/lua ]; then
@@ -158,7 +160,6 @@ else
     echo_done
   fi
 fi
-nvim +'hi NormalFloat guibg=#1e222a' +PackerSync +qall
 
 echo_done
 

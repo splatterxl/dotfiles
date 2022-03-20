@@ -6,11 +6,7 @@ eval "$(zoxide init zsh)"
 # Path to your oh-my-zsh installation.
 export ZSH="/data/data/com.termux/files/home/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,13 +97,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  #source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
 
 # You should have received the contents of zsh-hl/ and zsh-as/ directory with this file.
 # These come from https://github.com/zsh-users. Inspired by Leah Neukirchen's dotfiles.
@@ -284,8 +273,6 @@ alias repn="perl -e 'print((shift@ARGV)x(shift@ARGV));'"
 0x0() { curl -F "file=@${1:--}" https://0x0.st/ }
 # find in header files
 cppgrep() { printf '#include "%s"' "$@[2,-1]" | gcc -E -M -MP -x c++ - | awk -F: '/:$/ {print $1}' | xe -N0 grep -nP "$1" }
-# wrap long lines using backslashes
-wrap() { perl -pe 's/.{'$(( ${COLUMNS:-80} - 1))'}/$&\\\n/g' -- "$@" }
 # reload zshrc
 alias reload='source ~/.zshrc'
 # create a 64M ramdisk
@@ -329,12 +316,16 @@ alias vim='nvim'
 alias vi='nvim'
 alias yw='yarn watch'
 alias yd='yarn dev'
+alias yc='yarn build'
+alias ex='elixir'
+alias exc='elixirc'
 
 # trollface
 # alias code='nvim'
 # alias code-insiders='nvim'
 # set the shell
 SHELL=$PREFIX/bin/zsh
+EDITOR=nvim
 # ctrl+s => accept autosuggestion
 bindkey "^S" forward-char
 # source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -351,14 +342,12 @@ export NVM_DIR="$HOME/.nvm"
 if [ -e $HOME/.zsh/conf.zsh ]; then
   . ~/.zsh/conf.zsh
 fi
+
 export LD_LIBRARY_PATH=$PREFIX/usr/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=$PREFIX/usr/lib/pkgconfig:$PKG_CONFIG_PATH
 
-start_lightbulb() {
-  yarn watch >/dev/null &
-  yarn dev
-}
+export PATH=$HOME/.cargo/bin:$PATH
 
 setopt PROMPT_SUBST
-PROMPT='[%F{214}%T%f] %F{159}$(gitpwd)%f %F{red}%(?..[%?])%f%# '
-RPROMPT='%(?.%F{green}OK%f.%F{red}ERR!%f)%F{104}$(_paint_exec_time)$f'
+export PS1='[%F{214}%T%f] %F{159}$(gitpwd)%f %F{red}%(?..[%?])%f%# '
+export RPROMPT='%(?.%F{green}OK%f.%F{red}ERR!%f)%F{104}$(_paint_exec_time)$f'

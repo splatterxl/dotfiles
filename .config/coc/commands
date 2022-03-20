@@ -1,8 +1,0 @@
-tsserver.organizeImports
-prettier.formatFile
-document.renameCurrentWord
-document.echoFiletype
-tsserver.renameSymbol
-tsserver.renameSymbil
-tsserver.restartTsserver
-prettier

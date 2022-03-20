@@ -1,4 +1,3 @@
-NAME=zsh-syntax-highlighting                                                                                
 PREFIX?=/usr/local
 
 install:
