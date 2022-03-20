@@ -7,6 +7,10 @@ if [ "$1" == "nonet" ]; then
   export download=1
 fi
 
+if [ -x "$(command -v sudo)" ]; then
+  sudo="sudo"
+fi
+
 sudo() {
   $@
 }
@@ -162,6 +166,8 @@ else
 fi
 
 echo_done
+
+! [ -d $HOME/.zsh/completions ] && mkdir -p $HOME/.zsh/completions
 
 for x in $(ls setup_scripts); do
   path=setup_scripts/$x

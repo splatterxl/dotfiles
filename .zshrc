@@ -346,8 +346,11 @@ fi
 export LD_LIBRARY_PATH=$PREFIX/usr/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=$PREFIX/usr/lib/pkgconfig:$PKG_CONFIG_PATH
 
-export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.cargo/bin:$GOBIN:$HOME/go/bin:$PATH
 
 setopt PROMPT_SUBST
 export PS1='[%F{214}%T%f] %F{159}$(gitpwd)%f %F{red}%(?..[%?])%f%# '
 export RPROMPT='%(?.%F{green}OK%f.%F{red}ERR!%f)%F{104}$(_paint_exec_time)$f'
+
+source <(cod init $$ zsh)
+source /data/data/com.termux/files/home/.zsh/completions/git-extras.zsh
