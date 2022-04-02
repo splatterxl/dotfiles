@@ -34,7 +34,7 @@ cd git-extras
 git checkout
 $(git describe --tags $(git rev-list --tags --max-count=1)) &> /dev/null
 $sudo make install
-cp git-extras/etc/git-extras-completion.zsh $HOME/.zsh/completions/git-extras.zs
+cp etc/git-extras-completion.zsh $HOME/.zsh/completions/git-extras.zs
 debug done!
 rm -rf "$dir" 
 

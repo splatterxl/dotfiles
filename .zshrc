@@ -284,9 +284,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 # colors!
-_cls() { if [ -t 1 ]; then /bin/ls --color $*; else /bin/ls $*; fi }
+alias _cls='exa --color=auto'
 alias l="_cls -lF"
-alias la="_cls -lAF"
+alias la="_cls -laF"
 alias lsd="_cls -lF | grep --color=never '^d'"
 alias ls="_cls"
 alias grep="grep --color=auto"
@@ -306,6 +306,18 @@ mkd() { mkdir -p "$1" && cd "$1" }
 exe() { chmod a+x "$1" }
 loc() {
   node $HOME/loc/loc.mjs $@
+} 
+findt() {
+  for x in $(find .); do
+    if ! [ -d $x ]; then 
+      if grep -q $1 $x; then
+        echo -------------------------------------------------
+        echo $x 
+        echo
+        bat -n $x | grep $1
+      fi
+    fi
+  done
 }
 alias md='mkdir'
 alias poweroff='/sbin/shutdown -P now'
