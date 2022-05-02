@@ -331,6 +331,7 @@ alias yd='yarn dev'
 alias yc='yarn build'
 alias ex='elixir'
 alias exc='elixirc'
+alias gcz='g cz'
 
 # trollface
 # alias code='nvim'

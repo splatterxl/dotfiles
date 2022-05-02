@@ -48,7 +48,7 @@ M.setup_lsp = function(attach, capabilities)
    lspconfig.elixirls.setup {
       on_attach = attach,
       capabilities = capabilities,
-      cmd = { "/data/data/com.termux/files/home/.config/elixirls/language_server.sh" }
+      cmd = { vim.env.HOME .. "/.config/elixirls/language_server.sh" }
    }
 end
 

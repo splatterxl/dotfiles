@@ -51,7 +51,7 @@ warn() {
 }
 
 strt="$(node -e process.stdout.write'("\x1b")')"
-export yellow="$strt[93m"
+export yellow="$strt[1;93m"
 export blue="$strt[94m"
 export grey="$strt[90m"
 export red="$strt[91m"
