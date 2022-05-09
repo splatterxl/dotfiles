@@ -367,3 +367,8 @@ export RPROMPT='%(?.%F{green}OK%f.%F{red}ERR!%f)%F{104}$(_paint_exec_time)$f'
 
 source <(cod init $$ zsh)
 source /data/data/com.termux/files/home/.zsh/completions/git-extras.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export PNPM_HOME="/data/data/com.termux/files/home/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
