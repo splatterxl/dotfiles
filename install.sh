@@ -14,7 +14,7 @@ link_all() {
 link() {
   file="$1"
   filename="${file#*$PWD}"
-  outfile=$(echo "${HOME:?WHY IS THE HOME VARIABLE NOT SET WHAT THE FUCK}/$filename" | tr -s /)
+  outfile=$(echo "$HOME/$filename" | tr -s /)
   [ "${outfile%/}" = "$HOME" ] && die "Something went wrong and $file was translated to $HOME"
   if [ -e "$outfile" ]; then
     if [ -n "$_override" ]; then
@@ -42,7 +42,7 @@ check_dir() {
 }
 
 check_dir .git
-check_dir .config
+check_dir config
 check_dir .zsh
 if [ "$1" = "install" ]; then
   install_dotfiles
